@@ -10,7 +10,7 @@ from zk import ZK, const
 
 
 conn = None
-zk = ZK('192.168.2.72', port=4370)
+zk = ZK('192.168.2.172', port=4370)
 try:
     conn = zk.connect()
     print ('Disabling device ...')
