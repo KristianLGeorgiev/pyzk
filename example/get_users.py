@@ -10,7 +10,7 @@ from zk import ZK, const
 
 
 conn = None
-zk = ZK('192.168.2.201', port=4370)
+zk = ZK('192.168.2.72', port=4370)
 try:
     conn = zk.connect()
     print ('Disabling device ...')
@@ -22,7 +22,7 @@ try:
         if user.privilege == const.USER_ADMIN:
             privilege = 'Admin'
         print ('+ UID #{}'.format(user.uid))
-        print ('  Name       : {}'.format(user.name))
+        print (f'  Name  : {user.name}')
         print ('  Privilege  : {}'.format(privilege))
         print ('  Password   : {}'.format(user.password))
         print ('  Group ID   : {}'.format(user.group_id))
